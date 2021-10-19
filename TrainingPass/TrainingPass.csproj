@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TrainingPass</RootNamespace>
     <AssemblyName>TrainingPass</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -38,6 +38,9 @@
   <ItemGroup>
     <Reference Include="CoreAudio, Version=2020.11.2.36, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CoreAudio.1.10.0\lib\netstandard2.0\CoreAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <Private>True</Private>
     </Reference>
     <Reference Include="System">
       <Private>True</Private>
