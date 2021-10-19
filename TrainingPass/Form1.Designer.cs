@@ -32,6 +32,7 @@ namespace TrainingPass
 			this.components = new System.ComponentModel.Container();
 			this.trackBar1 = new System.Windows.Forms.TrackBar();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.label6 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@ namespace TrainingPass
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.timer2 = new System.Windows.Forms.Timer(this.components);
 			this.timer3 = new System.Windows.Forms.Timer(this.components);
-			this.label6 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
@@ -61,9 +61,10 @@ namespace TrainingPass
 			// trackBar1
 			// 
 			this.trackBar1.LargeChange = 1;
-			this.trackBar1.Location = new System.Drawing.Point(199, 96);
+			this.trackBar1.Location = new System.Drawing.Point(100, 50);
+			this.trackBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.trackBar1.Name = "trackBar1";
-			this.trackBar1.Size = new System.Drawing.Size(323, 90);
+			this.trackBar1.Size = new System.Drawing.Size(162, 45);
 			this.trackBar1.TabIndex = 0;
 			this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
 			// 
@@ -76,53 +77,70 @@ namespace TrainingPass
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.progressBar1);
 			this.groupBox1.Controls.Add(this.trackBar1);
-			this.groupBox1.Location = new System.Drawing.Point(12, 12);
+			this.groupBox1.Location = new System.Drawing.Point(6, 6);
+			this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(579, 248);
+			this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox1.Size = new System.Drawing.Size(290, 129);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Ses Ayarları";
 			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(264, 50);
+			this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(13, 13);
+			this.label6.TabIndex = 5;
+			this.label6.Text = "0";
+			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(6, 161);
+			this.label3.Location = new System.Drawing.Point(3, 84);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(195, 25);
+			this.label3.Size = new System.Drawing.Size(96, 13);
 			this.label3.TabIndex = 4;
 			this.label3.Text = "Anlık Ses Seviyesi:";
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(6, 96);
+			this.label2.Location = new System.Drawing.Point(3, 50);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(180, 25);
+			this.label2.Size = new System.Drawing.Size(89, 13);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Tıklama Seviyesi:";
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(6, 33);
+			this.label1.Location = new System.Drawing.Point(3, 17);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(180, 25);
+			this.label1.Size = new System.Drawing.Size(87, 13);
 			this.label1.TabIndex = 3;
 			this.label1.Text = "Ses Çıkış Cihazı: ";
 			// 
 			// comboBox1
 			// 
 			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(199, 30);
+			this.comboBox1.Location = new System.Drawing.Point(100, 16);
+			this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(374, 33);
+			this.comboBox1.Size = new System.Drawing.Size(189, 21);
 			this.comboBox1.TabIndex = 2;
 			// 
 			// progressBar1
 			// 
-			this.progressBar1.Location = new System.Drawing.Point(6, 192);
+			this.progressBar1.Location = new System.Drawing.Point(3, 100);
+			this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.progressBar1.Name = "progressBar1";
-			this.progressBar1.Size = new System.Drawing.Size(567, 43);
+			this.progressBar1.Size = new System.Drawing.Size(284, 22);
 			this.progressBar1.TabIndex = 1;
 			// 
 			// groupBox2
@@ -131,18 +149,21 @@ namespace TrainingPass
 			this.groupBox2.Controls.Add(this.label5);
 			this.groupBox2.Controls.Add(this.textBox1);
 			this.groupBox2.Controls.Add(this.label4);
-			this.groupBox2.Location = new System.Drawing.Point(12, 266);
+			this.groupBox2.Location = new System.Drawing.Point(6, 138);
+			this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(579, 125);
+			this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox2.Size = new System.Drawing.Size(290, 65);
 			this.groupBox2.TabIndex = 2;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Clicker Ayarları";
 			// 
 			// button3
 			// 
-			this.button3.Location = new System.Drawing.Point(379, 81);
+			this.button3.Location = new System.Drawing.Point(190, 42);
+			this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(194, 38);
+			this.button3.Size = new System.Drawing.Size(97, 20);
 			this.button3.TabIndex = 6;
 			this.button3.Text = "Koordinat Al";
 			this.button3.UseVisualStyleBackColor = true;
@@ -151,33 +172,37 @@ namespace TrainingPass
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(6, 88);
+			this.label5.Location = new System.Drawing.Point(3, 46);
+			this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(24, 25);
+			this.label5.Size = new System.Drawing.Size(13, 13);
 			this.label5.TabIndex = 5;
 			this.label5.Text = "[]";
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(379, 24);
+			this.textBox1.Location = new System.Drawing.Point(190, 12);
+			this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(194, 31);
+			this.textBox1.Size = new System.Drawing.Size(99, 20);
 			this.textBox1.TabIndex = 4;
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(6, 27);
+			this.label4.Location = new System.Drawing.Point(3, 14);
+			this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(367, 25);
+			this.label4.Size = new System.Drawing.Size(180, 13);
 			this.label4.TabIndex = 3;
 			this.label4.Text = "Tıklanacak Yerin Koordinatları (X, Y):";
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(6, 30);
+			this.button1.Location = new System.Drawing.Point(3, 16);
+			this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(166, 55);
+			this.button1.Size = new System.Drawing.Size(83, 29);
 			this.button1.TabIndex = 3;
 			this.button1.Text = "Başlat";
 			this.button1.UseVisualStyleBackColor = true;
@@ -187,18 +212,21 @@ namespace TrainingPass
 			// 
 			this.groupBox3.Controls.Add(this.button2);
 			this.groupBox3.Controls.Add(this.button1);
-			this.groupBox3.Location = new System.Drawing.Point(12, 397);
+			this.groupBox3.Location = new System.Drawing.Point(6, 206);
+			this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(579, 98);
+			this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox3.Size = new System.Drawing.Size(290, 51);
 			this.groupBox3.TabIndex = 4;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Clicker Beklemede";
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(407, 30);
+			this.button2.Location = new System.Drawing.Point(204, 16);
+			this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(166, 55);
+			this.button2.Size = new System.Drawing.Size(83, 29);
 			this.button2.TabIndex = 4;
 			this.button2.Text = "Durdur";
 			this.button2.UseVisualStyleBackColor = true;
@@ -207,18 +235,21 @@ namespace TrainingPass
 			// groupBox4
 			// 
 			this.groupBox4.Controls.Add(this.richTextBox1);
-			this.groupBox4.Location = new System.Drawing.Point(12, 501);
+			this.groupBox4.Location = new System.Drawing.Point(6, 261);
+			this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Size = new System.Drawing.Size(579, 283);
+			this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox4.Size = new System.Drawing.Size(290, 147);
 			this.groupBox4.TabIndex = 5;
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "Log";
 			// 
 			// richTextBox1
 			// 
-			this.richTextBox1.Location = new System.Drawing.Point(6, 30);
+			this.richTextBox1.Location = new System.Drawing.Point(3, 16);
+			this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(567, 247);
+			this.richTextBox1.Size = new System.Drawing.Size(286, 130);
 			this.richTextBox1.TabIndex = 0;
 			this.richTextBox1.Text = "";
 			// 
@@ -228,27 +259,18 @@ namespace TrainingPass
 			// 
 			// timer2
 			// 
-			this.timer2.Interval = 5000;
+			this.timer2.Interval = 1000;
 			this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
 			// 
 			// timer3
 			// 
 			this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
 			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(528, 96);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(24, 25);
-			this.label6.TabIndex = 5;
-			this.label6.Text = "0";
-			// 
 			// Form1
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(610, 796);
+			this.ClientSize = new System.Drawing.Size(305, 414);
 			this.Controls.Add(this.groupBox4);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
@@ -256,6 +278,7 @@ namespace TrainingPass
 			this.DoubleBuffered = true;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.KeyPreview = true;
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Form1";

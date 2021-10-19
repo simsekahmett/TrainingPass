@@ -11,6 +11,8 @@ namespace TrainingPass
 		private int currentVolume;
 		private int clickPointX;
 		private int clickPointY;
+		public int quiteCycle = 0;
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -117,11 +119,20 @@ namespace TrainingPass
 			try
 			{
 				if (currentVolume <= trackBar1.Value)
+					quiteCycle++;
+				else
+					quiteCycle = 0;
+
+				if(quiteCycle >= 5)
 				{
 					logger.Log("5 saniyedir ses algılanmadı, tıklama yapılıyor");
+
 					MouseHelper.MoveCursorToPoint(clickPointX, clickPointY);
 					MouseHelper.DoMouseClick();
+
 					logger.Log("Tıklama yapıldı");
+
+					quiteCycle = 0;
 				}
 			}
 			catch (Exception ex)
