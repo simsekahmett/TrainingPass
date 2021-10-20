@@ -62,7 +62,7 @@ namespace TrainingPass
 			// 
 			this.trackBar1.LargeChange = 1;
 			this.trackBar1.Location = new System.Drawing.Point(100, 50);
-			this.trackBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
 			this.trackBar1.Name = "trackBar1";
 			this.trackBar1.Size = new System.Drawing.Size(162, 45);
 			this.trackBar1.TabIndex = 0;
@@ -78,9 +78,9 @@ namespace TrainingPass
 			this.groupBox1.Controls.Add(this.progressBar1);
 			this.groupBox1.Controls.Add(this.trackBar1);
 			this.groupBox1.Location = new System.Drawing.Point(6, 6);
-			this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
 			this.groupBox1.Size = new System.Drawing.Size(290, 129);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
@@ -112,9 +112,9 @@ namespace TrainingPass
 			this.label2.Location = new System.Drawing.Point(3, 50);
 			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(89, 13);
+			this.label2.Size = new System.Drawing.Size(83, 13);
 			this.label2.TabIndex = 2;
-			this.label2.Text = "Tıklama Seviyesi:";
+			this.label2.Text = "Bekleme Süresi:";
 			// 
 			// label1
 			// 
@@ -130,7 +130,7 @@ namespace TrainingPass
 			// 
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Location = new System.Drawing.Point(100, 16);
-			this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(189, 21);
 			this.comboBox1.TabIndex = 2;
@@ -138,7 +138,7 @@ namespace TrainingPass
 			// progressBar1
 			// 
 			this.progressBar1.Location = new System.Drawing.Point(3, 100);
-			this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.progressBar1.Margin = new System.Windows.Forms.Padding(2);
 			this.progressBar1.Name = "progressBar1";
 			this.progressBar1.Size = new System.Drawing.Size(284, 22);
 			this.progressBar1.TabIndex = 1;
@@ -150,9 +150,9 @@ namespace TrainingPass
 			this.groupBox2.Controls.Add(this.textBox1);
 			this.groupBox2.Controls.Add(this.label4);
 			this.groupBox2.Location = new System.Drawing.Point(6, 138);
-			this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
 			this.groupBox2.Size = new System.Drawing.Size(290, 65);
 			this.groupBox2.TabIndex = 2;
 			this.groupBox2.TabStop = false;
@@ -161,7 +161,7 @@ namespace TrainingPass
 			// button3
 			// 
 			this.button3.Location = new System.Drawing.Point(190, 42);
-			this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button3.Margin = new System.Windows.Forms.Padding(2);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(97, 20);
 			this.button3.TabIndex = 6;
@@ -182,7 +182,7 @@ namespace TrainingPass
 			// textBox1
 			// 
 			this.textBox1.Location = new System.Drawing.Point(190, 12);
-			this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.textBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(99, 20);
 			this.textBox1.TabIndex = 4;
@@ -200,7 +200,7 @@ namespace TrainingPass
 			// button1
 			// 
 			this.button1.Location = new System.Drawing.Point(3, 16);
-			this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button1.Margin = new System.Windows.Forms.Padding(2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(83, 29);
 			this.button1.TabIndex = 3;
@@ -213,9 +213,9 @@ namespace TrainingPass
 			this.groupBox3.Controls.Add(this.button2);
 			this.groupBox3.Controls.Add(this.button1);
 			this.groupBox3.Location = new System.Drawing.Point(6, 206);
-			this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
 			this.groupBox3.Size = new System.Drawing.Size(290, 51);
 			this.groupBox3.TabIndex = 4;
 			this.groupBox3.TabStop = false;
@@ -224,7 +224,7 @@ namespace TrainingPass
 			// button2
 			// 
 			this.button2.Location = new System.Drawing.Point(204, 16);
-			this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button2.Margin = new System.Windows.Forms.Padding(2);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(83, 29);
 			this.button2.TabIndex = 4;
@@ -236,9 +236,9 @@ namespace TrainingPass
 			// 
 			this.groupBox4.Controls.Add(this.richTextBox1);
 			this.groupBox4.Location = new System.Drawing.Point(6, 261);
-			this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
 			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
 			this.groupBox4.Size = new System.Drawing.Size(290, 147);
 			this.groupBox4.TabIndex = 5;
 			this.groupBox4.TabStop = false;
@@ -247,7 +247,7 @@ namespace TrainingPass
 			// richTextBox1
 			// 
 			this.richTextBox1.Location = new System.Drawing.Point(3, 16);
-			this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.richTextBox1.Name = "richTextBox1";
 			this.richTextBox1.Size = new System.Drawing.Size(286, 130);
 			this.richTextBox1.TabIndex = 0;
@@ -278,7 +278,7 @@ namespace TrainingPass
 			this.DoubleBuffered = true;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.KeyPreview = true;
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Form1";

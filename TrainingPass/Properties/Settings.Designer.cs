@@ -37,13 +37,13 @@ namespace TrainingPass.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int ClickSoundTreshold {
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int ClickWaitSeconds {
             get {
-                return ((int)(this["ClickSoundTreshold"]));
+                return ((int)(this["ClickWaitSeconds"]));
             }
             set {
-                this["ClickSoundTreshold"] = value;
+                this["ClickWaitSeconds"] = value;
             }
         }
         

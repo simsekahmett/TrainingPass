@@ -5,8 +5,8 @@
     <Setting Name="AudioDevice" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="ClickSoundTreshold" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">0</Value>
+    <Setting Name="ClickWaitSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
     </Setting>
     <Setting Name="ClickPointX" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>

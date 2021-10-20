@@ -36,7 +36,7 @@ namespace TrainingPass
 		{
 			try
 			{
-				Properties.Settings.Default.ClickSoundTreshold = trackBar1.Value;
+				Properties.Settings.Default.ClickWaitSeconds = trackBar1.Value;
 				Properties.Settings.Default.AudioDevice = (string)comboBox1.SelectedValue;
 				Properties.Settings.Default.ClickPointX = clickPointX;
 				Properties.Settings.Default.ClickPointY = clickPointY;
@@ -56,7 +56,7 @@ namespace TrainingPass
 			try
 			{
 				logger.Log("Kaydedilmiş ayarlar getiriliyor");
-				trackBar1.Value = Properties.Settings.Default.ClickSoundTreshold;
+				trackBar1.Value = Properties.Settings.Default.ClickWaitSeconds;
 				clickPointX = Properties.Settings.Default.ClickPointX;
 				clickPointY = Properties.Settings.Default.ClickPointY;
 				textBox1.Text = clickPointX + "," + clickPointY;
@@ -118,14 +118,14 @@ namespace TrainingPass
 		{
 			try
 			{
-				if (currentVolume <= trackBar1.Value)
+				if (currentVolume <= 0)
 					quiteCycle++;
 				else
 					quiteCycle = 0;
 
-				if(quiteCycle >= 5)
+				if(quiteCycle >= trackBar1.Value)
 				{
-					logger.Log("5 saniyedir ses algılanmadı, tıklama yapılıyor");
+					logger.Log(quiteCycle + " saniyedir ses algılanmadı, tıklama yapılıyor");
 
 					MouseHelper.MoveCursorToPoint(clickPointX, clickPointY);
 					MouseHelper.DoMouseClick();
